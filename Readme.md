@@ -7,6 +7,12 @@ Then install modules in `source`:
 npm install
 ```
 
+Ensure you have gulp in global path:
+
+```
+npm install -g gulp
+```
+
 ### 7.2. How to Use
 In the `source` of the project, just simply run the gulp script in your terminal:
 ```
