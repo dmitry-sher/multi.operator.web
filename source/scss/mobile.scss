@@ -1,0 +1,48 @@
+@import "vars";
+@import "bourbon";
+@media screen and (max-device-width: 768px) {
+    html {
+        font-size: 10vw;
+    }
+    .wrap {
+        min-width: 100px;
+        width: 100%;
+        @include align-items(center);
+        @include display(flex);
+        @include flex-direction(column);
+        @include justify-content(center);
+        height: 100vh;
+        .row1 {
+            height: 70%;
+            @include align-items(center);
+            @include display(flex);
+            @include flex-direction(column);
+            @include justify-content(center);
+            padding: 0.1rem 0.1rem 0.1rem .5rem;
+        }
+        .row3 {
+            height: 30%;
+            @include align-items(center);
+            @include display(flex);
+            @include flex-direction(column);
+            @include justify-content(center);
+        }
+    }
+    html.landscape {
+        // rules for landscape mode
+        .fontH6 {
+            font-size: 0.5*$fh6;
+        }
+        .wrap {
+            @include flex-direction(row);
+        }
+        .row1 {
+            height: 100%;
+            width: 65%;
+        }
+        .row3 {
+            height: 100%;
+            width: 35%;
+        }
+    }
+}
